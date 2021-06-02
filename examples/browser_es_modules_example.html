@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>light-event-bus.js ES6 modules example</title>
+	</head>
+
+	<body>
+        <script type="module">
+            import { EventBus, EventBusSingleton } from '../build/light-event-bus.min.js'
+            const eventBus = new EventBus()
+            
+            eventBus.subscribe("event", arg => console.log(arg))
+            eventBus.publish("event", "message")
+
+            EventBusSingleton.subscribe("event", arg => console.log(arg))
+            EventBusSingleton.publish("event", "message to singleton")
+        </script>
+	</body>
+</html>
