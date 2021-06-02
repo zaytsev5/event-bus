@@ -1,5 +1,5 @@
 
-const { EventBus, CustomEventBus} = require('./EventBuss.js')
+const { EventBus, CustomEventBus} = require('./CustomEventBus')
 
 
 // import { CustomEventBus } from './EventBuss.js'
